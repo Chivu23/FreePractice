@@ -1,5 +1,5 @@
 """
-define a class name "Calculator", that:
+define a class name "Practice", that:
 - have 2 attribute on object ( init): a. b
 -method:
     - sum
@@ -9,7 +9,7 @@ define a class name "Calculator", that:
 """
 
 
-class Calculator:
+class Practice:
 
     # initialization method /  construct
     def __init__(self, a, b):
@@ -17,15 +17,18 @@ class Calculator:
         self.b = b          # def attrib b take val from b value from constructor
 
     def sum(self):
-        pass
+        return self.a + self.b
 
     def reduction(self):
-        pass
+        return self.a - self.b
 
     def multiplication(self):
-        pass
+        return self.a * self.b
 
     def division(self):
-        pass
+        try:
+            return self.a / self.b
+        except ZeroDivisionError:
+            return "Life is good with or without division to 0 (ZERO)!"
 
 
