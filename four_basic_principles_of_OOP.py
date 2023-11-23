@@ -100,22 +100,52 @@
 # car3.break_check()
 # print(car3.year)
 
+#
+# class Snow:
+#     # fields (attributes)
+#     length = 156
+#     brand = "Burton"
+#
+#     def __init__(self, model, color):     # <---- CONSTRUCTOR
+#         self.model = model
+#         self.color = color
+#
+#
+# board1 = Snow('Process', 'black')
+# board2 = Snow('Ripcord', 'red')
+#
+# print(board1.model)
+# print(board1.color)
+#
+# print(board2.model)
+# print(board2.color)
 
-class Snow:
-    # fields (attributes)
-    length = 156
-    brand = "Burton"
 
-    def __init__(self, model, color):     # <---- CONSTRUCTOR
-        self.model = model
-        self.color = color
-
-
-board1 = Snow('Process', 'black')
-board2 = Snow('Ripcord', 'red')
-
-print(board1.model)
-print(board1.color)
-
-print(board2.model)
-print(board2.color)
+# class Sports:   # <--- BASE CLASS ( PARENT)
+#
+#     def __init__(self, age):
+#         self.age = age
+#
+#     def play_tennis(self):
+#         print("tennis - The sport of the white t-shit")
+#
+#     def play_footbal(self):
+#         print("footbal - The king sport")
+#
+#
+# class PlaySports(Sports):   # <--- DERIVED CLASS ( CHILD)
+#
+#     def play_rugby(self):
+#         print("rugby - Such a fair-play game")
+#
+#
+# player1 = Sports(23)
+# player1.play_tennis()
+# player1.play_footbal()
+# print(player1.age)
+#
+# player2 = PlaySports(35)
+# player2.play_tennis()
+# player2.play_footbal()
+# player2.play_rugby()
+# print(player2.age)
