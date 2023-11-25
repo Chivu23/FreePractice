@@ -129,8 +129,8 @@
 #     def play_tennis(self):
 #         print("tennis - The sport of the white t-shit")
 #
-#     def play_footbal(self):
-#         print("footbal - The king sport")
+#     def play_football(self):
+#         print("football - The king sport")
 #
 #
 # class PlaySports(Sports):   # <--- DERIVED CLASS ( CHILD)
@@ -141,12 +141,12 @@
 #
 # player1 = Sports(23)
 # player1.play_tennis()
-# player1.play_footbal()
+# player1.play_football()
 # print(player1.age)
 #
 # player2 = PlaySports(35)
 # player2.play_tennis()
-# player2.play_footbal()
+# player2.play_football()
 # player2.play_rugby()
 # print(player2.age)
 
