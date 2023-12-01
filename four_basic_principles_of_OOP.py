@@ -121,7 +121,7 @@
 # print(board2.color)
 
 
-# class Sports:   # <--- BASE CLASS ( PARENT)
+# class Sports:   # <--- BASE CLASS ( PARENT  )
 #
 #     def __init__(self, age):
 #         self.age = age
@@ -133,7 +133,7 @@
 #         print("football - The king sport")
 #
 #
-# class PlaySports(Sports):   # <--- DERIVED CLASS ( CHILD)
+# class PlaySports(Sports):   # <--- DERIVED CLASS ( CHILD )
 #
 #     def play_rugby(self):
 #         print("rugby - Such a fair-play game")
@@ -151,3 +151,47 @@
 # print(player2.age)
 
 
+class Pers:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def dessert(self):
+        print(f"Person {self.name} have {self.age} years old")
+
+
+class Employ(Pers):
+
+    def __init__(self, name, age, salary, post):
+        super().__init__(name, age)
+        self.salary = salary
+        self.post = post
+
+    def afiseaza_salariu(self):
+        return self.salary
+
+    def dessert(self):
+        super().dessert()
+        print(f'Salary is {self.salary} for {self.post} post')
+
+
+pers = Pers("John", 20)
+print(pers.name)
+print(pers.age)
+pers.dessert()
+
+human = Employ("Theo", 23, 2000, "junior_develop")
+print(human.name)
+print(human.age)
+print(human.salary)
+print(human.post)
+
+print(f'{human.name} have {human.age} yars and he have {human.salary} eur salary on {human.post}')
+human.afiseaza_salariu()
+
+human1 = Employ("Leo", 32, 4000, "senior")
+print(human1.name)
+print(human.age)
+print(f'{human1.salary} euro win {human1.name} at {human1.age} age, and his job is {human1.post}')
+human1.dessert()

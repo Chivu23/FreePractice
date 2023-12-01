@@ -15,3 +15,11 @@ life_vegetables = Vegetables()
 
 life_fruits.healty()
 life_vegetables.healty()
+
+
+def get_healty_life(fruits_vegeta):
+    fruits_vegeta.healty()
+
+
+get_healty_life(life_fruits)
+get_healty_life(life_vegetables)
